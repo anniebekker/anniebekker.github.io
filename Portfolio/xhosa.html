@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="xhosa.css">
+        
+        <style>
+    #map-canvas { width:1000px; height:800px; }
+    .layer-wizard-search-label { font-family: sans-serif };
+  </style>
+  <script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?sensor=false">
+  </script>
+  <script type="text/javascript">
+    var map;
+    var layer_0;
+    var layer_1;
+    function initialize() {
+      map = new google.maps.Map(document.getElementById('map-canvas'), {
+        center: new google.maps.LatLng(-33.980688086403845, 18.602765866796865),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      layer_0 = new google.maps.FusionTablesLayer({
+        query: {
+          select: "col3",
+          from: "1hFvc-L7ti0JyymdjiXJA5n_iX-sk8zXBHhSi8pv_"
+        },
+        map: map,
+        styleId: 2,
+        templateId: 2
+      });
+      layer_1 = new google.maps.FusionTablesLayer({
+        query: {
+          select: "col4",
+          from: "1SgAWcOoVgEmoN9Q_jQ5y5azQolA056dNkH6B7tjc"
+        },
+        map: map,
+        styleId: 2,
+        templateId: 3
+      });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+  </head>
+
+    <body>
+        
+          <a href="index.html" class='button'>English</a>
+        
+       <h1>Ukuphenywa kwesicwangciso semali saseKapa, isixeko ekuthiwa sixhasa abahluphekileyo
+        </h1> 
+        
+      
+        
+        <p>
+            Usodolophu wesiXeko saseKapa, uPatricia de Lille, uzibophelele kwisingcwangciso semali ezuza abahluphekileyo, kowda ingaba esisigqibo sokuxhasa abahluphekileyo siyabonakala kwisicwangciso semali? Lombuzo ujongwa ngokuhlalutya isicwangciso esicetyisiweyo sika2017/2018 kwimali echithiwe kwiwadi nganye. Lo msebenzi ujolise ekuchithweni kwemali eyinkunzi kwiinkonzo zentlalo, ngokubuza imibuzo emibini: 1. Ingaba yanele imali echithweyo kwiinkonzo zentlalo? 2. Ingaba imali yahlulwa ngendlela ezuza abahluphekileyo? Ukchithwa kwemali eyinkunzi kunikisa umdla ngoba kubonakalisa utyalo-mali lwexesha elide; ingaba isiXeko saseKapa sityala kwabasweleyo?
+        </p>
+        
+        <h2> 1. Ingaba yanele imali echithweyo kwiinkonzo zentlalo?
+        
+        </h2>
+        <h3> Igraphu ebonakalisa isicwangciso semali esetyenziswe kwiinkonzo zentlalo 
+        </h3>
+        
+        <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1hp3y-E55cOEDES187xpdbpp1CnZHStO7V1FIXGePovY/pubchart?oid=520233333&amp;format=interactive"></iframe>
+        
+        <h2> 2. Ingaba imali yahlulwa ngendlela ezuza abahluphekileyo? </h2>
+            <h3> Imephi yesiXeko sase Kapa ebonkalisa isicwangciso semali senkonzo zentlalo ngokuthelekiswa nentlawulo yonyaka kumzi ngamnye kwiwadi.
+            <h3>
+        
+        
+    <div id="map-canvas"></div>
+        <img src="screenshot3.png">
+        <img src="screenshot4.png">
+  </body>
+    
+</html>

@@ -1,0 +1,225 @@
+body {
+    background-color: white; 
+  font-family: Calluna, Arial, sans-serif;
+  /*min-height: 1000px;*/
+    margin:0px;
+}
+
+/*NAV BAR*/
+#wrap	{
+	width: 100%; /* Spans the width of the page */
+	height: 3.1em; 
+	margin: 0;
+	z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+	position: relative; 
+	background-color: #444444;
+	}
+
+.navbar	{
+	height: 100%;
+        padding: 0;
+	margin: 0;
+	position: absolute; /* Ensures that the menu doesn’t affect other elements */ 
+	}
+
+.navbar li 	{
+			height: auto;
+			width: 12em;  /* Each menu item is 150px wide */
+			float: left;  /* This lines up the menu items horizontally */
+			text-align: center;  /* All text is placed in the center of the box */
+			list-style: none;  /* Removes the default styling (bullets) for the list */
+			font: normal bold 12px/1.2em Helvetica;  
+			padding: 0;
+			margin: 0;
+			background-color: #444444;
+                        }
+
+.navbar a	{							
+		padding: 12.5% 0;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+		text-decoration: none;  /* Removes the default hyperlink styling. */
+		color: white; /* Text color is white */
+		display: block;
+		}
+ .navbar li:hover, a.nav:hover {background-color: #f1c4c1;} 
+
+
+.navbar li ul li a.nav:hover	{background-color: #f1c4c1;}
+
+#drop 	{
+    position:absolute;
+    width:inherit;
+		display: none;  /* Hides the drop-down menu */
+		height: auto;									
+		margin: 0; /* Aligns drop-down box underneath the menu item */
+		padding: 0; /* Aligns drop-down box underneath the menu item */			
+		}				
+
+.navbar li:hover #drop 	{
+                        display: block; /* Displays the drop-down box when the menu item is hovered over */
+                        }
+
+ #drop li {background-color: #444444;} 
+.navbar li ul li a 	{
+		
+		}
+				
+.navbar li ul li a:hover	{background-color: #f1c4c1;}
+
+#pagecontainer{
+    width:1366px;
+    height:relative;
+    margin: 0 auto;
+}
+/*STORIFY*/
+
+#storify-container{
+    width:50%;
+    margin: 20px auto;
+}
+
+/*IMAGE*/
+
+img{
+    width:100%;
+}
+#imagecontainer{
+    width:500px;
+    height:relative;
+    margin:50px 40px 10px 50px;
+    float: left;
+}
+
+/*INFO*/
+#info{
+    width:720px;
+    height:500px;
+    background-color:#efafa6;
+    float:left;
+    margin: 50px 50px 50px 0px;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    margin: 30px 50px 0px 50px;
+    color:white;
+    text-transform: uppercase;
+    
+}
+h2{
+    font-family: "Oswald", sans-serif;
+    color: white;
+     margin: 1.5% 5% 0 5%;
+    text-transform: uppercase;
+    font-size: 1.9em;
+}
+
+
+p{
+    margin: 30px 50px;
+    color:white;
+    font-size: 1.5em;
+    line-height: 1.7em;
+}
+
+/*LINE*/
+hr{
+    display:block;
+    border-style:solid;
+    color:#f1ddcc;
+    border-bottom-width: .6em;
+    width:1270px;
+    margin-bottom: 50px;
+    
+}
+
+/*THIMBLE*/
+body {
+  font-family: "Arial", sans-serif;
+}
+
+h1.thimble {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  padding: 4% 0% 0% 0%;
+  font-family:'Oswald', sans-serif;
+    color: black;
+}
+
+h3 {
+  text-align: center;
+  font-size: large;
+  padding:1% 32% 3% 32%
+}
+
+#line {
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  margin: 20px 580px 50px 580px;
+  border-bottom-width: thick;
+}
+
+
+
+h4 {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  color: black;
+} 
+
+#col_left {
+  float:left;
+  width:43%;
+  background-color:white;
+  margin: 0% 1% 2% 2%;
+  padding: 2%;
+  display: block;
+}
+
+#col_right {
+  float:right;
+  width:43%;
+  background-color:white;
+  margin: 0% 2% 2% 1%;
+  padding: 2%;
+  display:block;
+}
+
+img.thimble {
+  margin-top: 3%;
+  width: 98%;
+  height: 100%;
+  border-style:solid;
+  border-width: 10px;
+  border-color: dimgrey;
+}
+
+#content_left {
+  text-align: justify;
+  line-height: 150%;
+  padding-top:4%;
+} 
+
+#content_right {
+  text-align: justify;
+  line-height: 150%;
+  padding-top: 4%;
+}
+
+p.thimble {
+  font-size: medium;
+    color:black;
+}
+
+
+#twogirls {
+  height:85px;
+  width:70px;
+  border:none;
+  position: relative; top: 10px; 
+}
+
+  
+  
